@@ -1,6 +1,5 @@
 var express = require('express');
 var bodyParser = require('body-parser');
-
 var app = express();
 var handlebars = require('express-handlebars').create({defaultLayout:'main'});
 
@@ -26,7 +25,6 @@ app.get('/', function(req, res){
 app.post('/', function(req,res){
   var qParams = [];
   var rParams = [];
-  console.log(req);
   for(var p in req.body){
     qParams.push({'name':p,'value':req.body[p]});
   }
