@@ -1,0 +1,36 @@
+<h1>{{requestType}} Request Received</h1>
+<table>
+  <thead>
+    <tr>
+      <th>NAME</th>
+      <th>VALUE</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each dataList}}
+    <tr>
+      <td>{{name}}</td>
+      <td>{{value}}</td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
+{{#if requestList}}
+<h1>Full {{requestType}} Request</h1>
+<table>
+  <thead>
+    <tr>
+      <th>KEY</th>
+      <th>VALUE</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each requsetList}}
+    <tr>
+      <td>{{name}}</td>
+      <td>{{value}}</td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
+{{/if}}
